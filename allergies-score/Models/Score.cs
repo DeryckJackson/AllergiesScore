@@ -23,6 +23,11 @@ namespace AllergiesScore
         list.Add("chocolate");
         score -= 32;
       }
+      if(score >= 16)
+      {
+        list.Add("tomatoes");
+        score -= 32;
+      }
 
       string[] output = list.ToArray();
       return output;

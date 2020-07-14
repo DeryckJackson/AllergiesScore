@@ -38,6 +38,11 @@ namespace AllergiesScore
         list.Add("shellfish");
         score -= 4;
       }
+      if(score >= 2)
+      {
+        list.Add("peanuts");
+        score -= 2;
+      }
 
       string[] output = list.ToArray();
       return output;

@@ -45,5 +45,13 @@ namespace AllergiesScore.Tests
       string[] expected = {"strawberries"};
       CollectionAssert.AreEqual(expected, testScore.ListAllergies(8));
     }
+
+    [TestMethod]
+    public void ListAllergies_InputNumberIncludesShellfishScore_shellfish()
+    {
+      Score testScore = new Score();
+      string[] expected = {"shellfish"};
+      CollectionAssert.AreEqual(expected, testScore.ListAllergies(4));
+    }
   }
 }

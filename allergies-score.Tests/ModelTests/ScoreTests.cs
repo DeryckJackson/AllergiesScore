@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AllergiesScore;
 
 namespace AllergiesScore.Tests
 {

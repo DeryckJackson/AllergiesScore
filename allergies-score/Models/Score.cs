@@ -11,6 +11,17 @@ namespace AllergiesScore
       if(score >= 128)
       {
         list.Add("cats");
+        score -= 128;
+      }
+      if(score >= 64)
+      {
+        list.Add("pollen");
+        score -= 64;
+      }
+      if(score >= 32)
+      {
+        list.Add("chocolate");
+        score -= 32;
       }
 
       string[] output = list.ToArray();

@@ -8,6 +8,14 @@ namespace AllergiesScore
     public string[] ListAllergies(int score)
     {
       List<string> list = new List<string>();
+      if(score > 255)
+      {
+        score = 255;
+      }
+      if(score <= 0)
+      {
+        list.Add("-no allergies-");
+      }
       if(score >= 128)
       {
         list.Add("cats");

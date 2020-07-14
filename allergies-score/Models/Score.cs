@@ -43,6 +43,11 @@ namespace AllergiesScore
         list.Add("peanuts");
         score -= 2;
       }
+      if(score == 1)
+      {
+        list.Add("eggs");
+        score -= 1;
+      }
 
       string[] output = list.ToArray();
       return output;

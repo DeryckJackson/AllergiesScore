@@ -33,6 +33,11 @@ namespace AllergiesScore
         list.Add("strawberries");
         score -= 8;
       }
+      if(score >= 4)
+      {
+        list.Add("shellfish");
+        score -= 4;
+      }
 
       string[] output = list.ToArray();
       return output;

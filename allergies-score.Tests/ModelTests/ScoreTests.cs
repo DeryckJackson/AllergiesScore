@@ -61,5 +61,13 @@ namespace AllergiesScore.Tests
       string[] expected = {"peanuts"};
       CollectionAssert.AreEqual(expected, testScore.ListAllergies(2));
     }
+
+    [TestMethod]
+    public void ListAllergies_InputNumberIncludeseggsScore_eggs()
+    {
+      Score testScore = new Score();
+      string[] expected = {"eggs"};
+      CollectionAssert.AreEqual(expected, testScore.ListAllergies(1));
+    }
   }
 }
